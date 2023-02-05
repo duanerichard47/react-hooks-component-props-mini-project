@@ -1,10 +1,10 @@
 import React from "react"
 import Article from "./Article"
 
-function ArticleList ({post}){
+function ArticleList ({posts}){
 
-const newArry = post.map(onePost  =>{
-
+const newArry = posts.map(onePost  =>{
+console.log(onePost)
 return(
     <Article key = {onePost.id} title={onePost.title} date = {onePost.date} preview={onePost.preview}/>
 )
